@@ -4,7 +4,7 @@ import SignUp from "./SignUp";
 import Jobs from "./Jobs";
 import Profile from "./Profile";
 import AdminPanel from "./AdminPanel";
-import Internships from "./internships";
+import Internships from "./Internships";
 import Subscriptions from "./Subscriptions";
 
 export {
