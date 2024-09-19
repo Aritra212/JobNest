@@ -1,0 +1,17 @@
+{
+  "title": "Encuentra tu trabajo soñado",
+  "subtitle": "con JobNest encontrar un buen trabajo ahora es fácil",
+  "categories": {
+    "bigBrands": "Grandes Marcas",
+    "designing": "Diseño",
+    "wfh": "Trabajo desde casa",
+    "software": "Desarrollo de software"
+  },
+  "cardHeadings": {
+    "internCat": "Categorías populares de pasantías",
+    "jobCat": "Categorías populares de trabajos"
+  },
+  "messages": {
+    "nfd": "Datos no encontrados"
+  }
+}

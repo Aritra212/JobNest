@@ -1,0 +1,17 @@
+{
+  "title": "找到你的梦想工作",
+  "subtitle": "通过 JobNest 找到好工作现在很容易",
+  "categories": {
+    "bigBrands": "大品牌",
+    "designing": "设计",
+    "wfh": "居家办公",
+    "software": "软件开发"
+  },
+  "cardHeadings": {
+    "internCat": "热门实习类别",
+    "jobCat": "热门职位类别"
+  },
+  "messages": {
+    "nfd": "未找到数据"
+  }
+}

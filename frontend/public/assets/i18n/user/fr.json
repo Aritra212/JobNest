@@ -1,0 +1,84 @@
+{
+  "signUp": {
+    "title": "Inscrivez-vous pour créer un compte",
+    "p1": "Vous avez déjà un compte?",
+    "p2": "Inscrivez-vous avec un numéro de téléphone",
+    "p3": "Inscrivez-vous avec un e-mail et un mot de passe",
+    "p4": "Inscrivez-vous avec votre compte Google",
+    "p5": "Choisissez une méthode pour continuer"
+  },
+  "login": {
+    "title": "Connectez-vous à votre compte",
+    "p1": "Vous n'avez pas de compte?",
+    "p2": "Connectez-vous avec un numéro de téléphone",
+    "p3": "Connectez-vous avec un e-mail et un mot de passe",
+    "p4": "Connectez-vous avec votre compte Google",
+    "p5": "Choisissez une méthode pour continuer"
+  },
+  "placeholders": {
+    "name": "Entrez votre nom complet",
+    "email": "Entrez votre e-mail",
+    "password": "Entrez votre mot de passe",
+    "phone": "Entrez votre numéro de téléphone"
+  },
+  "labels": {
+    "name": "Nom complet",
+    "email": "E-mail",
+    "password": "Mot de passe",
+    "phone": "Numéro de téléphone",
+    "coupon": "Entrez le coupon",
+    "offer": "Sélectionnez l'offre"
+  },
+  "btns": {
+    "b1": "Créer un compte",
+    "b2": "Télécharger une photo"
+  },
+  "apply": {
+    "title": "Demande pour",
+    "p1": "ID de travail"
+  },
+  "profile": {
+    "title": "Informations sur le profil",
+    "name": "Nom",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "userid": "ID utilisateur",
+    "jobid": "ID de travail",
+    "appid": "ID de candidature",
+    "jobtype": "Type de travail",
+    "browser": "Navigateur",
+    "os": "Système d'exploitation",
+    "ip": "Adresse IP",
+    "device": "Type d'appareil",
+    "logintime": "Heure de connexion",
+    "paymentid": "Dernier ID de paiement",
+    "activeplans": "Plans actifs",
+    "appleft": "Candidatures restantes",
+    "updateat": "Dernière mise à jour",
+    "btns": {
+      "b1": "Mes candidatures",
+      "b2": "Historique des connexions",
+      "b3": "Mes abonnements"
+    },
+    "msg": {
+      "m1": "Aucune donnée à afficher",
+      "m2": "Historique des abonnements"
+    }
+  },
+  "subscribe": {
+    "titles": {
+      "t1": "Plan gratuit",
+      "t2": "Plan bronze",
+      "t3": "Plan argent",
+      "t4": "Plan or",
+      "t5": "Obtenez jusqu'à 10% de réduction",
+      "t6": "Pas de coupon"
+    },
+    "features": {
+      "f1": "Postulez à un seul stage/emploi",
+      "f2": "Postulez à 3 stages/emplois",
+      "f3": "Postulez à 5 stages/emplois",
+      "f4": "Postulez à des stages/emplois illimités"
+    }
+  }
+}

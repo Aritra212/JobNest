@@ -1,0 +1,17 @@
+{
+  "title": "Find Your Dream Job",
+  "subtitle": "with JobNest finding a good Job now easy",
+  "categories": {
+    "bigBrands": "Big Brands",
+    "designing": "Designing",
+    "wfh": "Work From Home",
+    "software": "Software Development"
+  },
+  "cardHeadings": {
+    "internCat": "Popular Internship Categories",
+    "jobCat": "Popular Job Categories"
+  },
+  "messages": {
+    "nfd": "No Data Found"
+  }
+}

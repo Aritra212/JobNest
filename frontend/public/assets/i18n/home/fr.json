@@ -1,0 +1,17 @@
+{
+  "title": "Trouvez votre emploi de rêve",
+  "subtitle": "avec JobNest trouver un bon travail est maintenant facile",
+  "categories": {
+    "bigBrands": "Grandes Marques",
+    "designing": "Conception",
+    "wfh": "Télétravail",
+    "software": "Développement de logiciels"
+  },
+  "cardHeadings": {
+    "internCat": "Catégories populaires de stages",
+    "jobCat": "Catégories populaires d'emplois"
+  },
+  "messages": {
+    "nfd": "Aucune donnée trouvée"
+  }
+}

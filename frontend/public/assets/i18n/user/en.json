@@ -1,0 +1,84 @@
+{
+  "signUp": {
+    "title": "Sign up to create account",
+    "p1": "Already have an account?",
+    "p2": "Sign Up with Phone Number",
+    "p3": "Sign Up with Email and Password",
+    "p4": "Sign Up with Your Google Account",
+    "p5": "Choose one method to continue"
+  },
+  "login": {
+    "title": "Login to your account",
+    "p1": "Don't have any account?",
+    "p2": "Login with Phone Number",
+    "p3": "Login with Email and Password",
+    "p4": "Login with Your Google Account",
+    "p5": "Choose one method to continue"
+  },
+  "placeholders": {
+    "name": "Enter your full name",
+    "email": "Enter your email",
+    "password": "Enter your password",
+    "phone": "Enter phone number"
+  },
+  "labels": {
+    "name": "Full Name",
+    "email": "Email",
+    "password": "Password",
+    "phone": "Phone Number",
+    "coupon": "Enter coupon",
+    "offer": "Select Offer"
+  },
+  "btns": {
+    "b1": "Create Account",
+    "b2": "Upload Photo"
+  },
+  "apply": {
+    "title": "Application for",
+    "p1": "Job id"
+  },
+  "profile": {
+    "title": "Profile Info",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "userid": "User id",
+    "jobid": "Job id",
+    "appid": "Application id",
+    "jobtype": "Job type",
+    "browser": "Browser",
+    "os": "OS",
+    "ip": "Ip Address",
+    "device": "Device Type",
+    "logintime": "Login Time",
+    "paymentid": "Last payment id",
+    "activeplans": "Active plans",
+    "appleft": "Application Left",
+    "updateat": "Last update",
+    "btns": {
+      "b1": "My applications",
+      "b2": "Login History",
+      "b3": "My Subscrptions"
+    },
+    "msg": {
+      "m1": "No Data To Show",
+      "m2": "Subscription history"
+    }
+  },
+  "subscribe": {
+    "titles": {
+      "t1": "Free Plan",
+      "t2": "Bronze Plan",
+      "t3": "Silver Plan",
+      "t4": "Gold Plan",
+      "t5": "Get Upto 10% Off",
+      "t6": "Don't have coupon"
+    },
+    "features": {
+      "f1": "Apply only one Internship/job",
+      "f2": "Apply 3 Internships/jobs",
+      "f3": "Apply 5 Internships/jobs",
+      "f4": "Apply unlimited Internships/jobs"
+    }
+  }
+}

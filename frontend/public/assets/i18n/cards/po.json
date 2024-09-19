@@ -1,0 +1,20 @@
+{
+  "desc": {
+    "intern": "Descrição do estágio",
+    "job": "Descrição do trabalho"
+  },
+  "perks": "Benefícios",
+  "openings": "Número de vagas",
+  "sdate": "Data de início prevista",
+  "aCompany": "Sobre a empresa",
+  "message": {
+    "intern": {
+      "df": "Estágios encontrados",
+      "nf": "Nenhum estágio encontrado"
+    },
+    "job": {
+      "df": "Empregos encontrados",
+      "nf": "Nenhum emprego encontrado"
+    }
+  }
+}

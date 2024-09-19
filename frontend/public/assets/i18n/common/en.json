@@ -1,0 +1,22 @@
+{
+  "viewDetails": "View Details",
+  "cancel": "Cancel",
+  "apply": "Apply",
+  "back": "Back",
+  "ok": "OK",
+  "update": "Update",
+  "addFilter": "Add Filters",
+  "applied": "Applied",
+  "student": "Student",
+  "admin": "Admin",
+  "sendOtp": "Send OTP",
+  "verifyOtp": "Verify OTP",
+  "month": "month",
+  "getplan": "Get Plan",
+  "labels": {
+    "otp": "Enter OTP"
+  },
+  "placeholders": {
+    "otp": "Verification Code"
+  }
+}

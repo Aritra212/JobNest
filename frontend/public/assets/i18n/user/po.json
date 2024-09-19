@@ -1,0 +1,84 @@
+{
+  "signUp": {
+    "title": "Inscreva-se para criar uma conta",
+    "p1": "Já tem uma conta?",
+    "p2": "Inscreva-se com número de telefone",
+    "p3": "Inscreva-se com e-mail e senha",
+    "p4": "Inscreva-se com sua conta Google",
+    "p5": "Escolha um método para continuar"
+  },
+  "login": {
+    "title": "Faça login na sua conta",
+    "p1": "Não tem uma conta?",
+    "p2": "Faça login com número de telefone",
+    "p3": "Faça login com e-mail e senha",
+    "p4": "Faça login com sua conta Google",
+    "p5": "Escolha um método para continuar"
+  },
+  "placeholders": {
+    "name": "Digite seu nome completo",
+    "email": "Digite seu e-mail",
+    "password": "Digite sua senha",
+    "phone": "Digite o número de telefone"
+  },
+  "labels": {
+    "name": "Nome completo",
+    "email": "E-mail",
+    "password": "Senha",
+    "phone": "Número de telefone",
+    "coupon": "Digite o cupom",
+    "offer": "Selecione a oferta"
+  },
+  "btns": {
+    "b1": "Criar conta",
+    "b2": "Carregar foto"
+  },
+  "apply": {
+    "title": "Candidatura para",
+    "p1": "ID de trabalho"
+  },
+  "profile": {
+    "title": "Informações do perfil",
+    "name": "Nome",
+    "email": "E-mail",
+    "phone": "Telefone",
+    "userid": "ID do usuário",
+    "jobid": "ID do trabalho",
+    "appid": "ID de candidatura",
+    "jobtype": "Tipo de trabalho",
+    "browser": "Navegador",
+    "os": "Sistema operacional",
+    "ip": "Endereço IP",
+    "device": "Tipo de dispositivo",
+    "logintime": "Hora de login",
+    "paymentid": "Último ID de pagamento",
+    "activeplans": "Planos ativos",
+    "appleft": "Candidaturas restantes",
+    "updateat": "Última atualização",
+    "btns": {
+      "b1": "Minhas candidaturas",
+      "b2": "Histórico de login",
+      "b3": "Minhas assinaturas"
+    },
+    "msg": {
+      "m1": "Sem dados para mostrar",
+      "m2": "Histórico de assinaturas"
+    }
+  },
+  "subscribe": {
+    "titles": {
+      "t1": "Plano gratuito",
+      "t2": "Plano bronze",
+      "t3": "Plano prata",
+      "t4": "Plano ouro",
+      "t5": "Desconto de até 10%",
+      "t6": "Não tem cupom"
+    },
+    "features": {
+      "f1": "Candidate-se a apenas um estágio/trabalho",
+      "f2": "Candidate-se a 3 estágios/trabalhos",
+      "f3": "Candidate-se a 5 estágios/trabalhos",
+      "f4": "Candidate-se a estágios/trabalhos ilimitados"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "desc": {
+    "intern": "Description du stage",
+    "job": "Description de l'emploi"
+  },
+  "perks": "Avantages",
+  "openings": "Nombre de postes disponibles",
+  "sdate": "Date de début prévue",
+  "aCompany": "À propos de l'entreprise",
+  "message": {
+    "intern": {
+      "df": "Stages trouvés",
+      "nf": "Aucun stage trouvé"
+    },
+    "job": {
+      "df": "Emplois trouvés",
+      "nf": "Aucun emploi trouvé"
+    }
+  }
+}

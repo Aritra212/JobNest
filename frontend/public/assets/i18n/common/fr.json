@@ -1,0 +1,22 @@
+{
+  "viewDetails": "Voir les détails",
+  "cancel": "Annuler",
+  "apply": "Postuler",
+  "back": "Retour",
+  "ok": "OK",
+  "update": "Mettre à jour",
+  "addFilter": "Ajouter des filtres",
+  "applied": "Appliqué",
+  "student": "Étudiant",
+  "admin": "Administrateur",
+  "sendOtp": "Envoyer OTP",
+  "verifyOtp": "Vérifier OTP",
+  "month": "mois",
+  "getplan": "Obtenir le plan",
+  "labels": {
+    "otp": "Entrez OTP"
+  },
+  "placeholders": {
+    "otp": "Code de vérification"
+  }
+}

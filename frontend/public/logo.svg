@@ -1,0 +1,22 @@
+<svg width="142" height="132" viewBox="0 0 142 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_7_3)">
+<g clip-path="url(#clip1_7_3)">
+<rect width="76.4819" height="70.4808" transform="matrix(0.9197 0.392621 -0.486761 0.873535 51.353 19.7021)" fill="#EF233C"/>
+<path d="M55.0748 91.1531C71.2615 98.0632 90.7833 92.1797 98.6781 78.0119C106.573 63.8441 99.8509 46.7571 83.6643 39.847C67.4776 32.9369 47.9558 38.8204 40.0611 52.9882C32.1663 67.156 38.8882 84.243 55.0748 91.1531Z" stroke="#F3F3F3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<path d="M41.5 74.25C59.2191 74.25 73.5833 61.3782 73.5833 45.5C73.5833 29.6218 59.2191 16.75 41.5 16.75C23.7809 16.75 9.41666 29.6218 9.41666 45.5C9.41666 61.3782 23.7809 74.25 41.5 74.25Z" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M61 128.333C78.9493 128.333 93.5 115.648 93.5 100C93.5 84.3519 78.9493 71.6667 61 71.6667C43.0507 71.6667 28.5 84.3519 28.5 100C28.5 115.648 43.0507 128.333 61 128.333Z" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M35.5 103.25C53.6794 103.25 68.4167 90.3782 68.4167 74.5C68.4167 58.6218 53.6794 45.75 35.5 45.75C17.3206 45.75 2.58334 58.6218 2.58334 74.5C2.58334 90.3782 17.3206 103.25 35.5 103.25Z" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M83 60.25C100.949 60.25 115.5 47.3782 115.5 31.5C115.5 15.6218 100.949 2.75 83 2.75C65.0507 2.75 50.5 15.6218 50.5 31.5C50.5 47.3782 65.0507 60.25 83 60.25Z" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M106.5 87.25C124.679 87.25 139.417 74.3782 139.417 58.5C139.417 42.6218 124.679 29.75 106.5 29.75C88.3206 29.75 73.5833 42.6218 73.5833 58.5C73.5833 74.3782 88.3206 87.25 106.5 87.25Z" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M100.5 115.25C118.219 115.25 132.583 102.378 132.583 86.5C132.583 70.6218 118.219 57.75 100.5 57.75C82.7809 57.75 68.4167 70.6218 68.4167 86.5C68.4167 102.378 82.7809 115.25 100.5 115.25Z" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_7_3">
+<rect width="142" height="132" fill="white"/>
+</clipPath>
+<clipPath id="clip1_7_3">
+<rect width="76.4819" height="70.4808" fill="white" transform="matrix(0.9197 0.392621 -0.486761 0.873535 51.353 19.7021)"/>
+</clipPath>
+</defs>
+</svg>

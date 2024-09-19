@@ -1,0 +1,20 @@
+{
+  "desc": {
+    "intern": "Internship Description",
+    "job": "Job Description"
+  },
+  "perks": "Perks",
+  "openings": "No. Of Openings",
+  "sdate": "Expected start date",
+  "aCompany": "About Company",
+  "message": {
+    "intern": {
+      "df": "Internships Found",
+      "nf": "No Internships Found"
+    },
+    "job": {
+      "df": "Jobs Found",
+      "nf": "No Jobs Found"
+    }
+  }
+}

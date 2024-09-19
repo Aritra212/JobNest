@@ -1,0 +1,22 @@
+{
+  "viewDetails": "查看详情",
+  "cancel": "取消",
+  "apply": "申请",
+  "back": "返回",
+  "ok": "确定",
+  "update": "更新",
+  "addFilter": "添加筛选器",
+  "applied": "已应用",
+  "student": "学生",
+  "admin": "管理员",
+  "sendOtp": "发送OTP",
+  "verifyOtp": "验证OTP",
+  "month": "月",
+  "getplan": "获取计划",
+  "labels": {
+    "otp": "输入OTP"
+  },
+  "placeholders": {
+    "otp": "验证码"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Encontre o trabalho dos seus sonhos",
+  "subtitle": "com JobNest encontrar um bom trabalho agora é fácil",
+  "categories": {
+    "bigBrands": "Grandes Marcas",
+    "designing": "Design",
+    "wfh": "Trabalho remoto",
+    "software": "Desenvolvimento de software"
+  },
+  "cardHeadings": {
+    "internCat": "Categorias populares de estágios",
+    "jobCat": "Categorias populares de empregos"
+  },
+  "messages": {
+    "nfd": "Nenhum dado encontrado"
+  }
+}

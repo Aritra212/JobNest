@@ -1,0 +1,84 @@
+{
+  "signUp": {
+    "title": "Regístrate para crear una cuenta",
+    "p1": "¿Ya tienes una cuenta?",
+    "p2": "Regístrate con número de teléfono",
+    "p3": "Regístrate con correo electrónico y contraseña",
+    "p4": "Regístrate con tu cuenta de Google",
+    "p5": "Elige un método para continuar"
+  },
+  "login": {
+    "title": "Inicia sesión en tu cuenta",
+    "p1": "¿No tienes una cuenta?",
+    "p2": "Inicia sesión con número de teléfono",
+    "p3": "Inicia sesión con correo electrónico y contraseña",
+    "p4": "Inicia sesión con tu cuenta de Google",
+    "p5": "Elige un método para continuar"
+  },
+  "placeholders": {
+    "name": "Ingresa tu nombre completo",
+    "email": "Ingresa tu correo electrónico",
+    "password": "Ingresa tu contraseña",
+    "phone": "Ingresa el número de teléfono"
+  },
+  "labels": {
+    "name": "Nombre completo",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "phone": "Número de teléfono",
+    "coupon": "Ingresa el cupón",
+    "offer": "Selecciona la oferta"
+  },
+  "btns": {
+    "b1": "Crear cuenta",
+    "b2": "Subir foto"
+  },
+  "apply": {
+    "title": "Aplicación para",
+    "p1": "ID de trabajo"
+  },
+  "profile": {
+    "title": "Información del perfil",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "phone": "Teléfono",
+    "userid": "ID de usuario",
+    "jobid": "ID de trabajo",
+    "appid": "ID de solicitud",
+    "jobtype": "Tipo de trabajo",
+    "browser": "Navegador",
+    "os": "Sistema operativo",
+    "ip": "Dirección IP",
+    "device": "Tipo de dispositivo",
+    "logintime": "Hora de inicio de sesión",
+    "paymentid": "Último ID de pago",
+    "activeplans": "Planes activos",
+    "appleft": "Aplicaciones restantes",
+    "updateat": "Última actualización",
+    "btns": {
+      "b1": "Mis aplicaciones",
+      "b2": "Historial de inicio de sesión",
+      "b3": "Mis suscripciones"
+    },
+    "msg": {
+      "m1": "No hay datos para mostrar",
+      "m2": "Historial de suscripción"
+    }
+  },
+  "subscribe": {
+    "titles": {
+      "t1": "Plan gratuito",
+      "t2": "Plan bronce",
+      "t3": "Plan plata",
+      "t4": "Plan oro",
+      "t5": "Obtén hasta un 10% de descuento",
+      "t6": "No tienes cupón"
+    },
+    "features": {
+      "f1": "Aplica solo a una pasantía/trabajo",
+      "f2": "Aplica a 3 pasantías/trabajos",
+      "f3": "Aplica a 5 pasantías/trabajos",
+      "f4": "Aplica a pasantías/trabajos ilimitados"
+    }
+  }
+}

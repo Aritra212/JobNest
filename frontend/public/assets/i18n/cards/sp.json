@@ -1,0 +1,20 @@
+{
+  "desc": {
+    "intern": "Descripción de la pasantía",
+    "job": "Descripción del trabajo"
+  },
+  "perks": "Beneficios",
+  "openings": "Número de vacantes",
+  "sdate": "Fecha de inicio esperada",
+  "aCompany": "Acerca de la compañía",
+  "message": {
+    "intern": {
+      "df": "Pasantías encontradas",
+      "nf": "No se encontraron pasantías"
+    },
+    "job": {
+      "df": "Trabajos encontrados",
+      "nf": "No se encontraron trabajos"
+    }
+  }
+}
