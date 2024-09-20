@@ -82,14 +82,14 @@ function JobsLayout({ data = [], filter = "", value = "" }) {
       ) : (
         <div className="w-11/12 sm:w-3/5 mx-auto my-5">
           <div className="lg:flex lg:gap-4">
-            <div className="hidden lg:block">
+            {/* <div className="hidden lg:block">
               <JobFilterCard
                 locationList={locationList}
                 profileList={profileList}
                 filters={filters}
                 setFilters={setFilters}
               />
-            </div>
+            </div> */}
 
             <div className="lg:w-[calc(100%-245px)]">
               {filteredData.length === 0 && (
