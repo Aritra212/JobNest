@@ -24,7 +24,7 @@ const PhoneLogin = () => {
       const recaptcha = new RecaptchaVerifier(auth, "recaptca", {});
       const confirmation = await signInWithPhoneNumber(
         auth,
-        phoneNumber,
+        "+" + phoneNumber,
         recaptcha
       );
       console.log(confirmation);
