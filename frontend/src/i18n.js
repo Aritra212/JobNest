@@ -14,6 +14,7 @@ i18n
     fallbacking: "en",
     debug: false,
     ns: ["navigation", "home", "cards", "user", "common"],
+    whitelist: ["en", "sp", "fr", "hi", "po", "ch"],
     detection: {
       order: ["localStorage", "navigator"],
       caches: ["localStorage"],
@@ -26,6 +27,14 @@ i18n
     react: {
       useSuspense: true,
     },
+  })
+  .then(() => {
+    // Force setting to base language if a regional variant is detected
+    const detectedLanguage = i18n.language;
+    if (detectedLanguage.includes("-")) {
+      const baseLanguage = detectedLanguage.split("-")[0]; // Extract base language ('en' from 'en-IN')
+      i18n.changeLanguage(baseLanguage); // Change to base language only
+    }
   });
 
 export default i18n;
