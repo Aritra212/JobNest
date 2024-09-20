@@ -12,6 +12,7 @@ import {
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import axios from "axios";
 import conf from "../conf/conf";
+import { detect } from "detect-browser";
 
 export class AuthService {
   account;
@@ -130,6 +131,7 @@ export class AuthService {
                     phone: user.phoneNumber,
                     photoURL: user.photoURL,
                   };
+                  hist(user.uid, user.email);
                   resolve(this.userData);
                 })
                 .catch((error) => {
@@ -145,7 +147,7 @@ export class AuthService {
                 phone: user.phoneNumber,
                 photoURL: user.photoURL,
               };
-
+              hist(user.uid, email);
               resolve(this.userData);
             }
           } else {
@@ -192,6 +194,26 @@ export class AuthService {
     }
   }
 }
+
+const browser = detect();
+const hist = async (userId, email) => {
+  await axios
+    .post(`${conf.backendURL}/user/history`, {
+      browser: browser.name,
+      email,
+      os: browser.os,
+      isMobile: /Mobi/i.test(navigator.userAgent),
+      userId,
+    })
+    .then((res) => {
+      console.log(res);
+      alert(res.data.message);
+    })
+    .catch((error) => {
+      console.log(error);
+      alert(error.response.data.message);
+    });
+};
 
 const authService = new AuthService();
 export default authService;

@@ -6,17 +6,25 @@ import { sendOTP } from "../utils/sendMails.js";
 const loginHistory = async (req, res) => {
   const { browser, os, isMobile, userId, email } = req.body;
   const ip = await publicIpv4();
-
+  const deviceType = isMobile ? "Mobile" : "Desktop/Laptop";
   try {
-    const data = await new LoginHistorySchema({
+    let data = await LoginHistorySchema.findOne({
       userId,
-      email,
       browser,
       os,
       ipAddress: ip,
-      deviceType: isMobile ? "Mobile" : "Desktop/Laptop",
-    }).save();
-
+      deviceType,
+    });
+    if (!data) {
+      data = await new LoginHistorySchema({
+        userId,
+        email,
+        browser,
+        os,
+        ipAddress: ip,
+        deviceType,
+      }).save();
+    }
     res.status(201).send({
       success: true,
       message: "Login histroy saved",
