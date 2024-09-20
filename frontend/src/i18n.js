@@ -14,7 +14,11 @@ i18n
     fallbacking: "en",
     debug: false,
     ns: ["navigation", "home", "cards", "user", "common"],
-
+    detection: {
+      order: ["localStorage", "navigator"],
+      caches: ["localStorage"],
+    },
+    load: "languageOnly",
     interpolation: {
       espaceValue: false,
       formatSeparator: ",",
