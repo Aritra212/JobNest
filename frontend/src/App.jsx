@@ -73,6 +73,7 @@ function App() {
 
     if (isMobile && (currentHour < 10 || currentHour > 13)) {
       setCanAccess(false);
+      setLoading(true);
       setMsg(
         "Access denied! you can only access the site during 10 AM to 1PM from Mobile device"
       );
