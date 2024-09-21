@@ -16,7 +16,7 @@ const razorpay = new Razorpay({
 
 // Create order
 export const createOrder = async (req, res) => {
-  const { plan, discountedamt } = req.body;
+  const { plan, discountedamt, userId } = req.body;
 
   const plans = {
     free: { amount: 0, name: "Free Plan", internshipLimit: 1 },
@@ -35,6 +35,20 @@ export const createOrder = async (req, res) => {
     return res
       .status(400)
       .send("Payments can only be made between 10 am-11 pm IST");
+  }
+
+  const prevData = await orderSchema.findOne({ userId });
+  if (prevData) {
+    //check month expeirs or not
+    const currentDate = new Date(); // Get the current date
+    const paymentDate = new Date(prevData.updatedAt);
+
+    const timeDifference = currentDate.getTime() - paymentDate.getTime();
+    const daysDifference = timeDifference / (1000 * 3600 * 24);
+
+    if (prevData?.internshipLimit === "Unlimited" && daysDifference <= 30) {
+      return res.status(500).send("Allready have a unlimited plan");
+    }
   }
 
   const options = {
@@ -81,17 +95,34 @@ export const verifyOrder = async (req, res) => {
       const prevData = await orderSchema.findOne({ userId });
 
       if (prevData) {
+        //check month expeirs or not
+        const currentDate = new Date(); // Get the current date
+        const paymentDate = new Date(prevData.updatedAt);
+        let updatedPlan = plan,
+          updatedLimit = internshipLimit;
+
+        const timeDifference = currentDate.getTime() - paymentDate.getTime();
+        const daysDifference = timeDifference / (1000 * 3600 * 24);
+        if (internshipLimit === "Unlimited") {
+          updatedLimit = "Unlimited";
+          updatedPlan = prevData.plan + "+" + plan;
+        } else if (daysDifference <= 30) {
+          updatedLimit =
+            parseInt(prevData.internshipLimit) + parseInt(internshipLimit);
+          updatedPlan = prevData.plan + "+" + plan;
+        }
+
         const updatedData = await orderSchema.updateOne(
           { _id: prevData._id },
           {
             $set: {
               orderId: razorpay_orderID,
               amount: prevData.amount + amount / 100,
-              plan: prevData.plan + "+" + plan,
+              plan: updatedPlan,
               userId,
               userEmail: email,
               paymentId: razorpay_paymentID,
-              internshipLimit: prevData.internshipLimit + internshipLimit,
+              internshipLimit: updatedLimit,
             },
           }
         );
@@ -152,13 +183,20 @@ export const activeFreePlan = async (req, res) => {
 
   try {
     // check previous data
-    const data = await orderSchema.findOne({ userId: userId, plan: "free" });
+    const data = await orderSchema.findOne({ userId: userId });
 
-    if (data)
+    if (data && data.plan === "free")
       return res.status(500).send({
         success: false,
         message:
           "Allready subscribed a free plan. Can't active another plan choose other plans.",
+        data: data,
+      });
+
+    if (data)
+      return res.status(500).send({
+        success: false,
+        message: "Allready subscribed a plan. Can't active free plan.",
         data: data,
       });
 
@@ -188,7 +226,7 @@ export const activeFreePlan = async (req, res) => {
       from: process.env.EMAIL,
       to: email,
       subject: "Subscription Confirmation",
-      text: `Thank you for subscribing to the ${plan} paln.`,
+      text: `Thank you for subscribing to the free paln.`,
     };
 
     transporter.sendMail(mailOptions, (error, info) => {

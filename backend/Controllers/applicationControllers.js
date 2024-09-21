@@ -19,7 +19,9 @@ const canApply = async (uid) => {
           return { status: false, id: "", count: "" };
         }
       }
-      if (data?.internshipLimit > 0 || data?.internshipLimit === "Unlimited") {
+      const internshipLimit = parseInt(data?.internshipLimit);
+
+      if (internshipLimit > 0 || data?.internshipLimit === "Unlimited") {
         return { status: true, id: data._id, count: data.internshipLimit };
       }
       return { status: false, id: "", count: "" };
@@ -64,7 +66,8 @@ const saveApplication = async (req, res) => {
       { _id: id },
       {
         $set: {
-          internshipLimit: count !== "Unlimited" ? count - 1 : "Unlimited",
+          internshipLimit:
+            count !== "Unlimited" ? parseInt(count) - 1 : "Unlimited",
         },
       }
     );
