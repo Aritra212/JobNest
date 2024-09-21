@@ -14,7 +14,7 @@ function AdminPanel() {
     state.auth.status ? state.auth.userData.isAdmin : null
   );
 
-  return isAdmin ? (
+  return !isAdmin ? (
     <div className="w-full min-h-[calc(100vh-80px)] ">
       {!activeState && (
         <div className="w-3/5 h-[calc(100vh-80px)]  mx-auto flex flex-col justify-center box-border">

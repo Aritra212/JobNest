@@ -48,10 +48,10 @@ function InternshipForm({ placedata, state, prevData, setdata, backfn }) {
       backfn("");
     }
   };
-
   return (
     <div>
       <p className="mb-2 text-center">Language - {placedata?.language}</p>
+
       <Input
         label="Internship Title"
         placeholder={placedata.title}
@@ -106,6 +106,7 @@ function InternshipForm({ placedata, state, prevData, setdata, backfn }) {
       />
       <Input
         label="Category"
+        list="categories"
         placeholder={placedata.category}
         type="text"
         value={pdata.category}
@@ -117,6 +118,12 @@ function InternshipForm({ placedata, state, prevData, setdata, backfn }) {
         }
         required
       />
+      <datalist id="categories" className="bg-gray-500">
+        {placedata?.categories?.map((item) => (
+          <option key={item} value={item} />
+        ))}
+      </datalist>
+
       <TextArea
         label="About the company"
         className="h-[300px]"

@@ -105,6 +105,7 @@ function JobForm({ placedata, state, prevData, setdata, backfn }) {
       />
       <Input
         label="Category"
+        list="categories"
         placeholder={placedata.category}
         type="text"
         value={pdata.category}
@@ -116,6 +117,11 @@ function JobForm({ placedata, state, prevData, setdata, backfn }) {
         }
         required
       />
+      <datalist id="categories" className="bg-gray-500">
+        {placedata?.categories?.map((item) => (
+          <option key={item} value={item} />
+        ))}
+      </datalist>
       <TextArea
         label="About the company"
         className="h-[300px]"
