@@ -294,7 +294,7 @@ const getSubscriptionDetails = async (req, res) => {
     const data = await orderSchema.findOne({ userId });
 
     if (!data) {
-      res.status(404).send({
+      return res.status(404).send({
         success: false,
         message: "Subscription histroy not found",
       });
