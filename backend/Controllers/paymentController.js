@@ -293,7 +293,7 @@ const getSubscriptionDetails = async (req, res) => {
   try {
     const data = await orderSchema.findOne({ userId });
 
-    if (data.length == 0) {
+    if (!data) {
       res.status(404).send({
         success: false,
         message: "Subscription histroy not found",
