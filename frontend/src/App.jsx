@@ -38,59 +38,59 @@ function App() {
     }
   };
 
-  useEffect(() => {
-    if (authStatus && browser.name === "chrome" && !isOTPVerified) {
-      if (user.email)
-        axios
-          .post(`${conf.backendURL}/user/check-browser`, {
-            browser: browser.name,
-            userName: user.name,
-            email: user.email,
-          })
-          .then((res) => {
-            alert(res.data.message);
-            setShowOTPbox(true);
-            setOtp(res.data.otp);
-          })
-          .catch((error) => {
-            console.log(error);
-            alert(error.response.data.message);
-          });
-      else {
-        setCanAccess(false);
-        setLoading(true);
-        setMsg("Access denied! can't send otp");
-      }
-    } else {
-      setLoading(false);
-    }
-  }, [authStatus, browser.name, isOTPVerified]);
+  // useEffect(() => {
+  //   if (authStatus && browser.name === "chrome" && !isOTPVerified) {
+  //     if (user.email)
+  //       axios
+  //         .post(`${conf.backendURL}/user/check-browser`, {
+  //           browser: browser.name,
+  //           userName: user.name,
+  //           email: user.email,
+  //         })
+  //         .then((res) => {
+  //           alert(res.data.message);
+  //           setShowOTPbox(true);
+  //           setOtp(res.data.otp);
+  //         })
+  //         .catch((error) => {
+  //           console.log(error);
+  //           alert(error.response.data.message);
+  //         });
+  //     else {
+  //       setCanAccess(false);
+  //       setLoading(true);
+  //       setMsg("Access denied! can't send otp");
+  //     }
+  //   } else {
+  //     setLoading(false);
+  //   }
+  // }, [authStatus, browser.name, isOTPVerified]);
 
   useEffect(() => {
     console.log(1);
-    const isMobile = /Mobi/i.test(navigator.userAgent);
-    const currentHour = new Date().getHours();
+    // const isMobile = /Mobi/i.test(navigator.userAgent);
+    // const currentHour = new Date().getHours();
 
-    if (isMobile && (currentHour < 10 || currentHour > 13)) {
-      setCanAccess(false);
-      setLoading(true);
-      setMsg(
-        "Access denied! you can only access the site during 10 AM to 1PM from Mobile device"
-      );
-    } else {
-      authService
-        .getCurrentUser()
-        .then((userData) => {
-          console.log("userData: ", userData);
-          if (userData) {
-            dispatch(login(userData));
-          } else {
-            dispatch(logout());
-            navigate("/");
-          }
-        })
-        .finally(() => browser.name != "chrome" && setLoading(false));
-    }
+    // if (isMobile && (currentHour < 10 || currentHour > 13)) {
+    //   setCanAccess(false);
+    //   setLoading(true);
+    //   setMsg(
+    //     "Access denied! you can only access the site during 10 AM to 1PM from Mobile device"
+    //   );
+    // } else {
+    authService
+      .getCurrentUser()
+      .then((userData) => {
+        console.log("userData: ", userData);
+        if (userData) {
+          dispatch(login(userData));
+        } else {
+          dispatch(logout());
+          navigate("/");
+        }
+      })
+      .finally(() => /*browser.name != "chrome" && */ setLoading(false));
+    // }
   }, [dispatch, navigate, browser.name]);
 
   return !loading && !showOTPbox ? (

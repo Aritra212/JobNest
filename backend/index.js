@@ -21,8 +21,8 @@ connectDB();
 const app = express();
 
 const corsOpts = {
-  origin: "https://jobnest-v1.netlify.app",
-  // origin: "*",
+  // origin: "https://jobnest-v1.netlify.app",
+  origin: "*",
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true,
