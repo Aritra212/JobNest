@@ -1,7 +1,7 @@
 import { useState } from "react";
 import SignupComp from "../components/UserAuthComponents/SignupComp";
 import { Link } from "react-router-dom";
-import PhoneSignUp from "../components/UserAuthComponents/PhoneSignUp";
+// import PhoneSignUp from "../components/UserAuthComponents/PhoneSignUp";
 import authService from "../firebase/auth";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
@@ -9,7 +9,7 @@ import { login } from "../store/authSlice";
 
 import { FcGoogle } from "react-icons/fc";
 import { IoIosMail } from "react-icons/io";
-import { MdPermPhoneMsg } from "react-icons/md";
+// import { MdPermPhoneMsg } from "react-icons/md";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import heroImg from "../assets/images/heroImg.jpg";
 import { useTranslation } from "react-i18next";
@@ -66,13 +66,13 @@ function Signup() {
           </div>
           {signUpMethod === "" && (
             <div className="text-sm sm:text-lg flex flex-col gap-4">
-              <div
+              {/* <div
                 className="flex gap-2 items-center bg-white p-3 px-2 box-border rounded-md cursor-pointer"
                 onClick={() => setSignUpMethod("phone")}
               >
                 <MdPermPhoneMsg className="sm:text-2xl" />
                 {t("signUp.p2")}
-              </div>
+              </div> */}
               <div
                 className="flex gap-2 items-center bg-white p-3 px-2 box-border rounded-md cursor-pointer"
                 onClick={() => setSignUpMethod("email")}
@@ -92,7 +92,7 @@ function Signup() {
               </p>
             </div>
           )}
-          {signUpMethod === "phone" && <PhoneSignUp />}
+          {/* {signUpMethod === "phone" && <PhoneSignUp />} */}
           {signUpMethod === "email" && <SignupComp />}
           {signUpMethod !== "" && (
             <div
